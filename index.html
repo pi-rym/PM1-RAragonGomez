@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi pagina web</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1>Proyecto M1</h1>
+    <main>
+    <h1 class="Titulo1">Acerca de mí</h1>
+       <p class="Parrafo1"> Saludos soy Renzo Aragon Gomez egresado de la carrera de BSc Physics en la University of the West of Scotland y estudiante de programación para ser Desarrollador Full Stack en SoyHenry. Me gusta ver clases de programación e ir al gimnasio. </p>
+       <hr>
+    <h1 class="Titulo1">Mis tecnologías favoritas</h1>
+    <div class="contenedor-tarjetas" id="contenedorTarjetas">
+        <div class="tarjeta">
+           <img src="assets/html.png" alt="Logo html">
+           <h2 class="Titulo2">HTML</h2>
+           <p class="parrafo2">Hipertext Markup Language</p>
+        </div>
+
+        <div class="tarjeta">
+           <img src="assets/css.jpg" alt="Logo css">
+           <h2 class="Titulo2">CSS</h2>
+           <p class="parrafo2">Cascading Style Sheets</p>
+        </div>
+
+       <div class="tarjeta">
+           <img src="assets/javascript.jpg" alt="Logo Javascript">
+           <h2 class="Titulo2">Javascript</h2>
+           <p class="parrafo2">Lenguaje de programación</p>
+       </div>
+    </div>
+
+    <hr>
+    <h1 class="Titulo1">Mis actividades favoritas</h1>
+
+    <div class="formulario">
+        <h2 class="formulario3">Crear tarjetas</h2>
+        <form>
+            <div class="formulario1">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+            </div>
+            <div class="formulario1">
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+            </div>
+            <div class="formulario1">
+            <label for="urlImagen">URL de la imagen:</label>
+            <input type="text" id="urlImagen" name="urlImagen" required>
+            </div>
+            <div class="formulario2">
+            <button class="formulario4"type="submit">Crear Tarjeta</button>
+            </div>
+        </form>
+    </div>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>
