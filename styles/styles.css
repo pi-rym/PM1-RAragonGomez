@@ -1,6 +1,6 @@
 
 .tarjeta {
-    background-color: rgb(191, 75, 237);
+    background-image: linear-gradient(to right, #23a9f7, #d932ef);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -16,8 +16,11 @@
 
 }
 .tarjeta:hover {
-    background-color: #007bff;
+    background-image: linear-gradient(to right, #0cfad6, #3029f3);
     color: #9e11df;
+    border-radius: 30%;
+    cursor:pointer;
+    transform: scale(1.2)
 }
 .Titulo2:hover {
     color: blueviolet;
@@ -57,7 +60,7 @@ h1 {
 
 body {
     background-color: rgb(49, 135, 249);
-    background-image: url('/assets/programacion2.jpg'); 
+    background-image: url('/assets/programming4.jpg'); 
     background-size: cover; 
     background-position: center;
 }
@@ -79,7 +82,7 @@ p {
     flex-direction: column; 
     align-items: center; 
     padding: 20px; 
-    background-color: rgb(191, 75, 237); 
+    background-image: linear-gradient(to right, #23a9f7, #d932ef);
     border-radius: 30px; 
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5); 
     margin-bottom: 20px; 
@@ -117,7 +120,7 @@ form {
     margin-left: 300px;
     margin-right: 300px;
     color: aliceblue;
-    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .Parrafo1 {
@@ -160,3 +163,6 @@ form {
     transition: background-color 0.3s ease;
 }
 
+.footer1 {
+    color: aliceblue;
+}
