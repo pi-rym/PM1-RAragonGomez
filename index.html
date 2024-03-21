@@ -6,12 +6,13 @@
     <title>Mi pagina web</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
 </head>
 <body>
     <main>
        <section>
-       <h1 class="Titulo1">Acerca de mí</h1>
-       <p class="Parrafo1"> Saludos soy Renzo Aragon Gomez egresado de la carrera de BSc Physics en la University of the West of Scotland y estudiante de programación para ser Desarrollador Full Stack en SoyHenry. Me gusta ver clases de programación e ir al gimnasio. </p>
+       <h1 class="Titulo1">Sobre mí</h1>
+       <p class="Parrafo1"> Saludos soy Renzo Aragon Gomez egresado de la carrera de BSc Physics en la University of the West of Scotland y estudiante de programación para ser Desarrollador Full Stack en SoyHenry. Me gusta estudiar clases de programación e ir al gimnasio. </p>
        <hr>
        <h1 class="Titulo1">Mis tecnologías favoritas</h1>
        <div class="contenedor-tarjetas" id="contenedorTarjetas">
@@ -41,27 +42,30 @@
         <h2 class="formulario3">Crear tarjetas</h2>
         <form>
             <div class="formulario1">
-            <label for="titulo">Título:</label>
-            <input type="text" placeholder="Titulo "id="tituloInput" name="titulo" required>
+              <label for="titulo">Título:</label>
+              <input type="text" placeholder="Titulo "id="tituloInput" name="titulo" required>
             </div>
             <div class="formulario1">
-            <label for="descripcion">Descripción:</label>
-            <textarea placeholder="Descripción" id="descripcionInput" name="descripcion" required></textarea>
+              <label for="descripcion">Descripción:</label>
+              <textarea placeholder="Descripción" id="descripcionInput" name="descripcion" required></textarea>
             </div>
             <div class="formulario1">
-            <label for="urlImagen">URL de la imagen:</label>
-            <input type="text" placeholder="URL de imagen" id="urlImagenInput" name="urlImagen" required>
+              <label for="urlImagen">URL de la imagen:</label>
+              <input type="text" placeholder="URL de imagen" id="urlImagenInput" name="urlImagen" required>
             </div>
             <div class="formulario2">
-            <button class="formulario4"type="submit"onclick="crearTarjeta()">Crear Tarjeta</button>
+              <button class="formulario4" id="add" type="submit" onclick="crearTarjeta()">Crear Tarjeta</button>
             </div>
         </form>
     </div>
+    <container id="container">
+     No hay Activities
+    </container>
     <script src="./scripts/index.js"></script>
     </main>
     <footer>
         <div class="footer1">
-        Creado por Renzo Aragon Gomez
+        Creado por Renzo Aragon Gomez. Todos los derechos reservados.
         </div>
     </footer>
 </body>
